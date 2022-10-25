@@ -1,0 +1,97 @@
+/* universal styling */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* general styling */
+body {
+    text-align: center;
+    background-image: linear-gradient(to bottom right, #4CDDC5, #642599);
+}
+/* header */
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 20;
+}
+.logo {
+    width: 20rem;
+}
+.navbar-nav li {
+    margin: 0.5rem;
+}
+p {
+    font-size: 20px;
+}
+/* home */
+.items {
+    transform-style: preserve-3d;
+}
+.home, .humans {
+    backface-visibility: hidden;
+    height: 100%;
+    width: 100%;
+}
+.home {
+    z-index: 20;
+}
+.humans {
+    transform: rotateY(180deg);
+}
+.container:hover .items {
+    transform: rotateY(180deg);
+    transition: 2s;
+}
+/* resume */
+pre {
+    font-size: 30px;
+    font-family: Pacifico;
+}
+#resume {
+    padding: 100px;
+}
+/* project */
+#project {
+    padding: 100px;
+    min-height: 50vw;
+}
+/* contact form */
+#contact {
+    font-family: Pacifico;
+    font-size: 30px;
+    padding: 100px;
+}
+#contact input {
+    background-color: white;
+}
+#contact input:hover {
+    background-color: white;
+}
+
+#contact textarea {
+    background-color: white;
+}
+.submit:hover {
+    font-weight: bold;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom right, #4CDDC5, #642599);
+}
+/* footer */
+footer {
+    font-family: Pacifico;
+    text-align: center;
+    font-size: 20px;
+}
+/* progress bar */
+progress[value] {
+    appearance: none;
+    border: none;
+    background-color: whiteSmoke;
+    border-radius: 3px;
+    box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+    color: royalblue;
+}
+
