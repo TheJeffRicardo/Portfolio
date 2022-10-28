@@ -54,10 +54,10 @@ pre {
     padding: 100px;
 }
 /* project */
-#project {
+/* #project {
     padding: 100px;
     min-height: 50vw;
-}
+} */
 /* contact form */
 #contact {
     font-family: Pacifico;
@@ -66,6 +66,7 @@ pre {
 }
 #contact input {
     background-color: white;
+    font-family: none;
 }
 #contact input:hover {
     background-color: white;
@@ -75,7 +76,6 @@ pre {
     background-color: white;
 }
 .submit:hover {
-    font-weight: bold;
     cursor: pointer;
     background-image: linear-gradient(to bottom right, #4CDDC5, #642599);
 }
@@ -93,5 +93,13 @@ progress[value] {
     border-radius: 3px;
     box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
     color: royalblue;
+}
+@media screen and (max-width: 300px) {
+    body {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 720px) {
+
 }
 
