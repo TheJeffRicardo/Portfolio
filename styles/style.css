@@ -12,19 +12,23 @@ body {
     background-image: linear-gradient(to bottom right, #4CDDC5, #642599);
 }
 /* header */
-header {
-    position: sticky;
-    top: 0px;
-    z-index: 20;
-}
 .logo {
     width: 20rem;
 }
 .navbar-nav li {
     margin: 0.5rem;
 }
-p {
-    font-size: 20px;
+.navbar-nav li:hover {
+    color: white;
+    background-color: black;
+    transition: 0.5s;
+}
+.navbar-nav a {
+    color: black;
+}
+.navbar-nav a:hover {
+    color: white;
+    transition: 0.5s;
 }
 /* home */
 .items {
@@ -46,18 +50,24 @@ p {
     transition: 2s;
 }
 /* resume */
-pre {
+p {
     font-size: 30px;
     font-family: Pacifico;
+    overflow: hidden;
 }
 #resume {
     padding: 100px;
 }
+
 /* project */
-/* #project {
+#project {
     padding: 100px;
     min-height: 50vw;
-} */
+}
+.carousel-inner img {
+    margin: auto;
+    height: 13vh;
+}
 /* contact form */
 #contact {
     font-family: Pacifico;
@@ -100,6 +110,11 @@ progress[value] {
     }
 }
 @media screen and (max-width: 720px) {
-
+    body {
+        width: 100%;
+    }
+    p {
+        font-size: 3vw;
+    }
 }
 
