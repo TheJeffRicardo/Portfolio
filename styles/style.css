@@ -10,7 +10,12 @@
 /* general styling */
 body {
     text-align: center;
-    background-image: linear-gradient(to bottom right, #4CDDC5, #642599);
+    background-image: linear-gradient(to bottom, #4CDDC5, rgba(0, 64, 154, 0.792), #642599);
+}
+h1 {
+    font-family: none;
+    font-size: 72px;
+    text-align: center;
 }
 /* header */
 .logo {
@@ -73,22 +78,38 @@ p {
     margin: auto;
     height: 60vh;
 }
+.carousel-item .links {
+    padding: 10px;
+}
+.carousel-item .links:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.links .netlify:hover {
+    font-size: 20px;
+    transition: 0.2s;
+}
+.links .github:hover {
+    font-size: 20px;
+    transition: 0.2s;
+}
 /* contact form */
 #contact {
     padding: 100px;
 }
 .submit:hover {
     cursor: pointer;
-    background-image: linear-gradient(to bottom right, #4CDDC5, #642599);
+    background-color: #642599;
+    border: 2px solid #2d2d2d;
+    transition: 0.5s;
+    color: #2d2d2d;
+    font-weight: bold;
 }
 .contact h1 {
     font-family: none;
-    font-weight: 600;
     font-size: 72px;
-    color: white;
     text-align: center;
 }
-
 .contact h4 {
     font-family: Pacifico;
     font-weight: 400;
@@ -199,12 +220,76 @@ progress[value] {
     }
 }
 @media screen and (max-width: 300px) {
+    /* general styling */
     body {
         width: 100%;
     }
-    p {
-        font-size: 1vw;
+    h1 {
+        font-size: 30px;
     }
+    p {
+        font-size: 5vw;
+    }
+    pre {
+        font-size: 10px;
+    }
+    /* navbar */
+    .container-fluid {
+        flex-wrap: nowrap;
+    }
+    /* home */
+    #home img {
+        width: 200px;
+    }
+    /* resume */
+    #resume {
+        padding: 5px;
+    }
+    /* project */
+    #project {
+        padding: 0;
+    }
+    .carousel-inner img {
+        min-height:10vh;
+    }
+    /* testimonials */
+    .test {
+        font-size: 1rem;
+    }
+    /* contact */
+    #contact {
+        padding-top: 310px;
+        align-items: flex-start;
+        text-align: start;
+        padding: 0;
+    }
+    .contact h1 {
+        font-size: 30px;
+    }
+    .contact h4 {
+        font-size: 15px;
+    }
+    .styled-input.wide { 
+        width: 250px;
+    }
+    input,
+    textarea {
+        width: 100%;
+        font-size: 1rem;
+    }
+    input:focus ~ span,
+    textarea:focus ~ span {
+        width: 100%;
+    }
+    textarea {
+        width: 100%;
+        min-height: 15em;
+    }
+    .input-container {
+        width: 250px;
+        max-width: 400%;
+    }
+    
 }
 @media screen and (max-width: 720px) {
     body {
