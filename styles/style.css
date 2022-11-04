@@ -85,6 +85,12 @@ p {
     opacity: 1;
     cursor: pointer;
 }
+.carousel-control-prev i {
+    font-size: 2rem;
+}
+.carousel-control-next i {
+    font-size: 2rem;
+}
 .links .netlify:hover {
     font-size: 20px;
     transition: 0.2s;
@@ -234,7 +240,7 @@ progress[value] {
         font-size: 10px;
     }
     /* navbar */
-    .container-fluid {
+    .navbar {
         flex-wrap: nowrap;
     }
     /* home */
@@ -249,18 +255,19 @@ progress[value] {
     #project {
         padding: 0;
     }
-    .carousel-inner img {
-        min-height:10vh;
-    }
     /* testimonials */
     .test {
         font-size: 1rem;
     }
+    .carousel-control-prev i {
+        font-size: 0.5rem;
+    }
+    .carousel-control-next i {
+        font-size: 0.5rem;
+    }
     /* contact */
     #contact {
         padding-top: 310px;
-        align-items: flex-start;
-        text-align: start;
         padding: 0;
     }
     .contact h1 {
@@ -289,6 +296,12 @@ progress[value] {
         width: 250px;
         max-width: 400%;
     }
+    .styled-input label {
+        font-size: 0.7rem;
+    }
+    .submit {
+        font-size: 0.7rem;
+    }
     
 }
 @media screen and (max-width: 720px) {
@@ -298,10 +311,19 @@ progress[value] {
     p {
         font-size: 3.5vw;
     }
+    /* project */
     #project img{
         height: 20vh;
         width: 20vw;
     }
+    /* testimonial */
+    .carousel-control-prev i {
+        font-size: 1rem;
+    }
+    .carousel-control-next i {
+        font-size: 1rem;
+    }
+    /* contact */
     #contact {
         font-size: 15px;
     }
