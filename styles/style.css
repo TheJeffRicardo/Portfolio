@@ -304,12 +304,95 @@ progress[value] {
     }
     
 }
+@media screen and (min-width: 300px) and (max-width: 450px) {
+    /* general styling */
+    body {
+        width: 100%;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 5vw;
+    }
+    pre {
+        font-size: 10px;
+    }
+    /* navbar */
+    .navbar {
+        flex-wrap: nowrap;
+    }
+    /* home */
+    #home img {
+        width: 200px;
+    }
+    /* resume */
+    #resume {
+        padding: 5px;
+    }
+    /* project */
+    #project {
+        padding: 0;
+    }
+    /* testimonials */
+    .test {
+        font-size: 1rem;
+    }
+    .carousel-control-prev i {
+        font-size: 0.5rem;
+    }
+    .carousel-control-next i {
+        font-size: 0.5rem;
+    }
+    /* contact */
+    #contact {
+        padding-top: 310px;
+        padding: 0;
+    }
+    .contact h1 {
+        font-size: 30px;
+    }
+    .contact h4 {
+        font-size: 15px;
+    }
+    .styled-input.wide { 
+        width: 250px;
+    }
+    input,
+    textarea {
+        width: 100%;
+        font-size: 1rem;
+    }
+    input:focus ~ span,
+    textarea:focus ~ span {
+        width: 100%;
+    }
+    textarea {
+        width: 100%;
+        min-height: 15em;
+    }
+    .input-container {
+        width: 250px;
+        max-width: 400%;
+    }
+    .styled-input label {
+        font-size: 0.7rem;
+    }
+    .submit {
+        font-size: 0.7rem;
+    }
+    
+}
 @media screen and (max-width: 720px) {
     body {
         width: 100%;
     }
     p {
         font-size: 3.5vw;
+    }
+    /* resume */
+    #resume {
+        padding: 5px;
     }
     /* project */
     #project img{
@@ -329,6 +412,117 @@ progress[value] {
     }
     #contact textarea {
         font-family: none;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 720px) {
+    body {
+        width: 100%;
+    }
+    p {
+        font-size: 3.5vw;
+    }
+    h1{
+        font-size: 50px;
+    }
+    /* resume */
+    #resume {
+        padding: 5px;
+    }
+    /* project */
+    #project img{
+        height: 20vh;
+        width: 20vw;
+    }
+    /* testimonial */
+    .carousel-control-prev i {
+        font-size: 1rem;
+    }
+    .carousel-control-next i {
+        font-size: 1rem;
+    }
+    /* contact */
+    .contact h1{
+        font-size: 50px;
+    }
+    #contact {
+        font-size: 15px;
+    }
+    #contact textarea {
+        font-family: none;
+    }
+}
+@media screen and (max-width: 450px) {
+    h1{
+        font-size: 30px;
+    }
+    /* home */
+    #home img {
+        width: 200px;
+    }
+    /* contact */
+    .contact h1{
+        font-size: 30px;
+    }
+    #contact {
+        padding-top: 310px;
+        padding: 0;
+    }
+    input,
+    textarea {
+        width: 100%;
+        font-size: 1rem;
+    }
+    textarea {
+        width: 100%;
+        min-height: 15em;
+    }
+    .input-container {
+        width: 250px;
+    }
+    .styled-input label {
+        font-size: 0.7rem;
+    }
+    .submit {
+        font-size: 0.7rem;
+    }
+}
+@media screen and (min-width: 450px) and (max-width: 600px) {
+    h1{
+        font-size: 30px;
+    }
+    /* navbar */
+    .navbar {
+        flex-wrap: nowrap;
+    }
+    /* home */
+    #home img {
+        width: 200px;
+    }
+    /* contact */
+    .contact h1{
+        font-size: 30px;
+    }
+    #contact {
+        padding-top: 310px;
+        padding: 0;
+    }
+    input,
+    textarea {
+        width: 100%;
+        font-size: 1rem;
+    }
+    textarea {
+        width: 100%;
+        min-height: 15em;
+    }
+    .input-container {
+        width: 250px;
+    }
+    .styled-input label {
+        font-size: 0.7rem;
+    }
+    .submit {
+        font-size: 0.7rem;
     }
 }
 
