@@ -16,10 +16,26 @@ h1 {
     font-family: none;
     font-size: 72px;
     text-align: center;
+    animation: heading 5s infinite;
+    animation-direction: alternate;
 }
+.colorblue {
+    animation: heading1 5s infinite;
+    animation-direction: alternate;
+}
+.colorpurple {
+    animation: heading2 5s infinite;
+    animation-direction: alternate;
+}
+.colorblack {
+    animation: heading 5s infinite;
+    animation-direction: alternate;
+}
+
 /* header */
 .logo {
     width: 20rem;
+    margin: 0px -30px;
 }
 .navbar-nav li {
     margin: 0.5rem;
@@ -201,6 +217,36 @@ footer {
     text-align: center;
     font-size: 20px;
 }
+footer .socials {
+    animation: socials 1s infinite;
+    animation-delay: 0.2s;
+    animation-direction: alternate;
+}
+footer .socials1 {
+    animation: socials 1s infinite;
+    animation-delay: 0.5s;
+    animation-direction: alternate;
+}
+footer .socials2 {
+    animation: socials 1s infinite;
+    animation-delay: 0.7s;
+    animation-direction: alternate;
+}
+footer .socials:hover{
+    transform: translateY(-20px);
+    font-size: 2rem;
+    animation: none;
+}
+footer .socials1:hover {
+    transform: translateY(-20px);
+    font-size: 2rem;
+    animation: none;
+}
+footer .socials2:hover {
+    transform: translateY(-20px);
+    font-size: 2rem;
+    animation: none;
+}
 /* progress bar */
 progress[value] {
     appearance: none;
@@ -254,6 +300,9 @@ progress[value] {
     /* project */
     #project {
         padding: 0;
+    }
+    #project img {
+        height: 10vh;
     }
     /* testimonials */
     .test {
@@ -318,6 +367,9 @@ progress[value] {
     pre {
         font-size: 10px;
     }
+    .colorblack {
+        animation: none;
+    }
     /* navbar */
     .navbar {
         flex-wrap: nowrap;
@@ -333,6 +385,14 @@ progress[value] {
     /* project */
     #project {
         padding: 0;
+    }
+    #project img {
+        height: 10vh;
+        width: 0;
+    }
+    #project i {
+        font-size: 0.6rem;
+        margin: -10px;
     }
     /* testimonials */
     .test {
@@ -390,10 +450,6 @@ progress[value] {
     p {
         font-size: 3.5vw;
     }
-    /* resume */
-    #resume {
-        padding: 5px;
-    }
     /* project */
     #project img{
         height: 20vh;
@@ -423,10 +479,6 @@ progress[value] {
     }
     h1{
         font-size: 50px;
-    }
-    /* resume */
-    #resume {
-        padding: 5px;
     }
     /* project */
     #project img{
@@ -525,4 +577,53 @@ progress[value] {
         font-size: 0.7rem;
     }
 }
-
+@keyframes socials {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
+@keyframes heading {
+    25%{
+        box-shadow: 10px 2px 10px 1px #642599;
+    }
+    50%{
+        box-shadow: 0px 7px 10px 1px #642599;
+    }
+    75%{
+        box-shadow: -10px 2px 10px 1px #642599;
+    }
+    100%{
+        box-shadow: 0px -7px 10px 1px #642599;
+    }
+}
+@keyframes heading1 {
+    25%{
+        box-shadow: 10px 2px 10px 1px #34064e;
+    }
+    50%{
+        box-shadow: 0px 7px 10px 1px #34064e;
+    }
+    75%{
+        box-shadow: -10px 2px 10px 1px #34064e;
+    }
+    100%{
+        box-shadow: 0px -7px 10px 1px #34064e;
+    }
+}
+@keyframes heading2 {
+    25%{
+        box-shadow: 10px 2px 10px 1px #2d2d2d;
+    }
+    50%{
+        box-shadow: 0px 7px 10px 1px #2d2d2d;
+    }
+    75%{
+        box-shadow: -10px 2px 10px 1px #2d2d2d;
+    }
+    100%{
+        box-shadow: 0px -7px 10px 1px #2d2d2d;
+    }
+}
